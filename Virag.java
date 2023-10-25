@@ -44,7 +44,11 @@ public class Main {
 		for (Virag x : lista) virag.add(x.virag);
 		System.out.printf("1) Összesen %d féle virágot rendeltek (abc):\n   ", virag.size());
 		for (String x : virag) System.out.printf("%s ", x);
+<<<<<<< HEAD
 		System.out.println();
+=======
+		System.out.println("Ez NEM kell ide...");
+>>>>>>> 33ae609a5aa94f394ee685d2b21e78bec9c3b68f
 	}
 	
 	private void f2_orankent() {
@@ -70,7 +74,8 @@ public class Main {
 			else szin.put(x.szin, szin.get(x.szin) + x.darab);
 		}
 		System.out.printf("3) Eladott darabszám színek szerinti (abc) csoportosításban:\n   ");
-		int n = szin.keySet().size(), i=0;
+		int n = szin.keySet().size();
+		int i=0;
 		for (String x : szin.keySet()) {
 			System.out.printf("%d %s", szin.get(x), x);
 			i++; if (i<n) System.out.print(", ");
